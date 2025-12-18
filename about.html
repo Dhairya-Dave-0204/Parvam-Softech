@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Parvam Softech</title>
+    <title>About Us | Parvam Softech</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,23 +49,10 @@
         }
 
         .section-padding {
-            /* Increased spacing as requested */
             @apply py-24 lg:py-32;
         }
 
-        /* Bullet Point Styling */
-        .service-list li {
-            @apply flex items-start gap-4 mb-4 text-gray-700 font-medium;
-        }
-
-        .service-list li i {
-            @apply text-brand-teal mt-1 text-lg bg-teal-50 rounded-full p-1;
-        }
-
-        /* Image Container Standardization 
-           - Reduced height from h-96 to h-72 on desktop
-           - Added max-width to constrain visual focus
-        */
+        /* Image Container Standardization */
         .img-container {
             @apply relative w-full h-64 lg:h-72 max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl;
         }
@@ -89,10 +76,9 @@
 
             <div class="items-center hidden gap-8 font-medium lg:flex">
                 <a href="index.html" class="transition-colors nav-link hover:text-brand-teal">Home</a>
-                <a href="#" class="nav-link text-brand-teal">Services</a>
+                <a href="services.html" class="transition-colors nav-link hover:text-brand-teal">Services</a>
                 <a href="portfolio.html" class="transition-colors nav-link hover:text-brand-teal">Portfolio</a>
-                <a href="process.html" class="transition-colors nav-link hover:text-brand-teal">Process</a>
-                <a href="about.html" class="transition-colors nav-link hover:text-brand-teal">About</a>
+                <a href="#" class="nav-link text-brand-teal">About</a>
                 <a href="#contact"
                     class="px-6 py-2.5 font-semibold text-white transition duration-300 rounded-full bg-brand-teal hover:bg-white hover:text-brand-teal border-2 border-transparent hover:border-brand-teal">Get
                     Quote</a>
@@ -108,11 +94,10 @@
             class="absolute left-0 w-full overflow-hidden transition-all duration-500 ease-in-out bg-white shadow-xl opacity-0 lg:hidden top-full max-h-0">
             <div class="flex flex-col items-center gap-6 py-8 border-t border-gray-100 text-brand-navy">
                 <a href="index.html" class="text-lg font-medium transition-colors hover:text-brand-teal">Home</a>
-                <a href="#" class="text-lg font-bold text-brand-teal">Services</a>
+                <a href="services.html" class="text-lg font-medium transition-colors hover:text-brand-teal">Services</a>
                 <a href="portfolio.html"
                     class="text-lg font-medium transition-colors hover:text-brand-teal">Portfolio</a>
-                <a href="process.html" class="text-lg font-medium transition-colors hover:text-brand-teal">Process</a>
-                <a href="about.html" class="text-lg font-medium transition-colors hover:text-brand-teal">About</a>
+                <a href="#" class="text-lg font-bold text-brand-teal">About</a>
                 <a href="#contact" class="text-lg font-medium transition-colors hover:text-brand-teal">Contact Us</a>
             </div>
         </div>
@@ -129,79 +114,136 @@
             <div data-aos="fade-up">
                 <span
                     class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider uppercase rounded-full bg-brand-teal/20 text-brand-teal border border-brand-teal/30">
-                    Our Expertise
+                    Who We Are
                 </span>
                 <h1 class="mb-6 text-4xl font-bold leading-tight lg:text-6xl font-heading">
-                    Comprehensive <span class="text-brand-teal">Digital Solutions</span>
+                    Driven by Passion, <br><span class="text-brand-teal">Defined by Quality</span>
                 </h1>
                 <p class="max-w-2xl mx-auto text-lg leading-relaxed text-blue-100">
-                    We combine technical precision with creative strategy to build products that drive growth. From
-                    concept to code, we are your partners in innovation.
+                    We are a team of digital architects, developers, and dreamers dedicated to building technology that
+                    simplifies complex business challenges.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="mb-20 section-padding bg-brand-light md:mb-32">
+    <section class="mb-20 section-padding md:mb-32">
         <div class="container px-6 mx-auto">
             <div class="flex flex-col items-center gap-16 lg:flex-row">
                 <div class="lg:w-3/5" data-aos="fade-right">
-                    <div
-                        class="flex items-center justify-center w-16 h-16 mb-6 text-2xl bg-white shadow-sm rounded-2xl text-brand-navy">
-                        <i class="fa-solid fa-laptop-code"></i>
-                    </div>
-                    <h2 class="mb-4 text-3xl font-bold lg:text-4xl font-heading text-brand-dark">Custom Web Development
-                    </h2>
-                    <p class="mb-8 text-lg leading-relaxed text-gray-600">
-                        We build robust, scalable, and secure web applications tailored to your business needs. Whether
-                        it's a simple landing page or a complex enterprise dashboard, we ensure top-tier performance.
+                    <h2 class="mb-6 text-3xl font-bo ld lg:text-4xl font-heading text-brand-dark">The Parvam Story</h2>
+                    <p class="mb-6 text-lg leading-relaxed text-gray-600">
+                        Founded in India with a global vision, Parvam Softech started as a small group of tech
+                        enthusiasts who believed that great software shouldn't be complicated. We saw a gap in the
+                        market for IT services that offered both <strong>high-end technical skill</strong> and
+                        <strong>transparent, human communication</strong>.
                     </p>
-                    <ul class="service-list">
-                        <li><i class="fa-solid fa-check"></i> <span>Responsive Business Websites & Landing Pages</span>
-                        </li>
-                        <li><i class="fa-solid fa-check"></i> <span>Custom Web Apps (React, Vue, Node.js)</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span>Admin Dashboards & Customer Portals</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span>E-commerce Solutions (Shopify & Custom)</span></li>
-                    </ul>
+                    <p class="mb-6 text-lg leading-relaxed text-gray-600">
+                        Today, we have grown into a full-service digital partner for startups and SMEs worldwide. We
+                        don't just write code; we build relationships. Our mission is to bridge the gap between your
+                        vision and digital reality through innovation and integrity.
+                    </p>
+
+                    <div class="flex gap-8 mt-8">
+                        <div>
+                            <h4 class="text-3xl font-bold text-brand-teal">50+</h4>
+                            <p class="text-sm text-gray-500">Projects Delivered</p>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-bold text-brand-teal">3+</h4>
+                            <p class="text-sm text-gray-500">Years Experience</p>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-bold text-brand-teal">100%</h4>
+                            <p class="text-sm text-gray-500">Client Satisfaction</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="lg:w-2/5" data-aos="fade-left">
                     <div class="img-container">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                            alt="Web Development" class="img-standard">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            alt="Team Meeting" class="img-standard">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="mb-20 section-padding md:mb-32">
+    <section class="py-20 mb-20">
         <div class="container px-6 mx-auto">
-            <div class="flex flex-col items-center gap-16 lg:flex-row-reverse">
-                <div class="lg:w-3/5" data-aos="fade-left">
+            <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+                <div class="p-8 border border-blue-100 rounded-3xl bg-blue-50" data-aos="fade-up">
                     <div
-                        class="flex items-center justify-center w-16 h-16 mb-6 text-2xl shadow-sm bg-teal-50 rounded-2xl text-brand-teal">
-                        <i class="fa-solid fa-mobile-screen"></i>
+                        class="flex items-center justify-center mb-6 text-2xl text-white rounded-full shadow-md w-14 h-14 bg-brand-navy">
+                        <i class="fa-solid fa-rocket"></i>
                     </div>
-                    <h2 class="mb-4 text-3xl font-bold lg:text-4xl font-heading text-brand-dark">Mobile App Development
-                    </h2>
-                    <p class="mb-8 text-lg leading-relaxed text-gray-600">
-                        Reach your customers wherever they are. We specialize in developing high-performance native and
-                        cross-platform mobile applications that offer seamless user experiences on both iOS and Android.
+                    <h3 class="mb-4 text-2xl font-bold text-brand-dark">Our Mission</h3>
+                    <p class="leading-relaxed text-gray-600">
+                        To empower businesses of all sizes with accessible, scalable, and cutting-edge technology
+                        solutions that drive measurable growth and efficiency.
                     </p>
-                    <ul class="service-list">
-                        <li><i class="fa-solid fa-check"></i> <span>Cross-Platform Apps (Flutter & React Native)</span>
-                        </li>
-                        <li><i class="fa-solid fa-check"></i> <span>Native iOS (Swift) & Android (Kotlin)
-                                Development</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span>Mobile UI/UX Design & Prototyping</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span>Secure API Integration & Backend Support</span></li>
-                    </ul>
                 </div>
-                <div class="lg:w-2/5" data-aos="fade-right">
-                    <div class="img-container">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                            alt="Mobile App Development" class="img-standard">
+
+                <div class="p-8 border border-teal-100 rounded-3xl bg-teal-50" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="flex items-center justify-center mb-6 text-2xl text-white rounded-full shadow-md w-14 h-14 bg-brand-teal">
+                        <i class="fa-solid fa-eye"></i>
                     </div>
+                    <h3 class="mb-4 text-2xl font-bold text-brand-dark">Our Vision</h3>
+                    <p class="leading-relaxed text-gray-600">
+                        To become a globally recognized digital partner known for ethical practices, technical
+                        excellence, and transforming complex ideas into simple, beautiful software.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-8 mb-20 overflow-hidden text-white section-padding bg-brand-navy md:mb-32">
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-10">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="w-full h-full">
+                <path d="M0 100 C 20 0 50 0 100 100 Z" fill="white" />
+            </svg>
+        </div>
+
+        <div class="container relative z-10 px-6 mx-auto">
+            <div class="mb-16 text-center" data-aos="fade-up">
+                <h2 class="mb-4 text-3xl font-bold lg:text-4xl font-heading">Our Core Values</h2>
+                <p class="max-w-2xl mx-auto text-blue-100">These virtues guide every line of code we write and every
+                    decision we make.</p>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div class="p-8 transition duration-500 border bg-white/10 backdrop-blur-sm rounded-2xl border-white/10 hover:bg-white/20"
+                    data-aos="fade-up">
+                    <div class="mb-4 text-4xl text-brand-teal"><i class="fa-regular fa-handshake"></i></div>
+                    <h4 class="mb-3 text-xl font-bold">Integrity</h4>
+                    <p class="text-sm text-gray-300">We believe in honest communication. No hidden costs, no false
+                        promises. Just transparency.</p>
+                </div>
+
+                <div class="p-8 transition-all duration-500 border bg-white/10 backdrop-blur-sm rounded-2xl border-white/10 hover:bg-white/20"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-4 text-4xl text-brand-teal"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h4 class="mb-3 text-xl font-bold">Innovation</h4>
+                    <p class="text-sm text-gray-300">We stay ahead of tech trends to ensure your solutions are modern,
+                        secure, and future-proof.</p>
+                </div>
+
+                <div class="p-8 transition-all duration-500 border bg-white/10 backdrop-blur-sm rounded-2xl border-white/10 hover:bg-white/20"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="mb-4 text-4xl text-brand-teal"><i class="fa-solid fa-medal"></i></div>
+                    <h4 class="mb-3 text-xl font-bold">Quality First</h4>
+                    <p class="text-sm text-gray-300">We don't cut corners. We write clean, maintainable code that stands
+                        the test of time.</p>
+                </div>
+
+                <div class="p-8 transition-all duration-500 border bg-white/10 backdrop-blur-sm rounded-2xl border-white/10 hover:bg-white/20"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="mb-4 text-4xl text-brand-teal"><i class="fa-solid fa-users"></i></div>
+                    <h4 class="mb-3 text-xl font-bold">Client-Centric</h4>
+                    <p class="text-sm text-gray-300">Your success is our success. We treat your project with the same
+                        passion as if it were our own.</p>
                 </div>
             </div>
         </div>
@@ -209,62 +251,59 @@
 
     <section class="mb-20 section-padding bg-brand-light md:mb-32">
         <div class="container px-6 mx-auto">
-            <div class="flex flex-col items-center gap-16 lg:flex-row">
-                <div class="lg:w-3/5" data-aos="fade-right">
-                    <div
-                        class="flex items-center justify-center w-16 h-16 mb-6 text-2xl text-purple-600 shadow-sm bg-purple-50 rounded-2xl">
-                        <i class="fa-solid fa-pen-nib"></i>
-                    </div>
-                    <h2 class="mb-4 text-3xl font-bold lg:text-4xl font-heading text-brand-dark">UI/UX Design</h2>
-                    <p class="mb-8 text-lg leading-relaxed text-gray-600">
-                        Design is not just how it looks, but how it works. Our design team focuses on user research,
-                        intuitive flows, and modern aesthetics to create products that users love to engage with.
-                    </p>
-                    <ul class="service-list">
-                        <li><i class="fa-solid fa-check"></i> <span>Wireframing & Interactive Prototyping</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span>User Research, Persona Mapping & User Flows</span>
-                        </li>
-                        <li><i class="fa-solid fa-check"></i> <span>Web & Mobile App Interface Design</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span>Design Systems & Brand Style Guides</span></li>
-                    </ul>
-                </div>
-                <div class="lg:w-2/5" data-aos="fade-left">
-                    <div class="img-container">
-                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="UI/UX Design" class="img-standard">
-                    </div>
-                </div>
+            <div class="mb-16 text-center" data-aos="fade-up">
+                <span class="text-sm font-bold tracking-wider uppercase text-brand-teal">Meet the Minds</span>
+                <h2 class="mt-2 text-3xl font-bold lg:text-4xl font-heading text-brand-dark">The People Behind Parvam
+                </h2>
             </div>
-        </div>
-    </section>
 
-    <section class="mb-20 section-padding md:mb-32">
-        <div class="container px-6 mx-auto">
-            <div class="flex flex-col items-center gap-16 lg:flex-row-reverse">
-                <div class="lg:w-3/5" data-aos="fade-left">
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div class="p-6 text-center duration-500 bg-white shadow-sm transition-all- rounded-2xl group hover:shadow-lg"
+                    data-aos="fade-up">
                     <div
-                        class="flex items-center justify-center w-16 h-16 mb-6 text-2xl text-orange-600 shadow-sm bg-orange-50 rounded-2xl">
-                        <i class="fa-solid fa-layer-group"></i>
+                        class="w-32 h-32 mx-auto mb-4 overflow-hidden transition-colors duration-500 border-4 rounded-full border-brand-light group-hover:border-brand-teal">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member"
+                            class="object-cover w-full h-full">
                     </div>
-                    <h2 class="mb-4 text-3xl font-bold lg:text-4xl font-heading text-brand-dark">Graphic Design &
-                        Branding</h2>
-                    <p class="mb-8 text-lg leading-relaxed text-gray-600">
-                        Your brand is your story. We help you tell it visually. From memorable logos to cohesive brand
-                        identities and marketing collateral, we ensure your business stands out in a crowded market.
-                    </p>
-                    <ul class="service-list">
-                        <li><i class="fa-solid fa-check"></i> <span>Logo Design & Complete Brand Guidelines</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span>Social Media Creatives, Banners & Ads</span></li>
-                        <li><i class="fa-solid fa-check"></i> <span>Marketing Brochures, Flyers & Presentations</span>
-                        </li>
-                        <li><i class="fa-solid fa-check"></i> <span>Business Cards, Letterheads & Stationery</span></li>
-                    </ul>
+                    <h4 class="text-lg font-bold text-brand-dark">Aravind Patel</h4>
+                    <p class="mb-3 text-sm font-semibold text-brand-teal">Founder & CEO</p>
+                    <p class="text-xs text-gray-500">Visionary leader with 10+ years in software architecture.</p>
                 </div>
-                <div class="lg:w-2/5" data-aos="fade-right">
-                    <div class="img-container">
-                        <img src="https://images.unsplash.com/photo-1506097425191-7ad538b29cef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Graphic Design Tools" class="img-standard">
+
+                <div class="p-6 text-center transition-all duration-500 bg-white shadow-sm rounded-2xl group hover:shadow-lg"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 overflow-hidden transition-colors duration-500 border-4 rounded-full border-brand-light group-hover:border-brand-teal">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member"
+                            class="object-cover w-full h-full">
                     </div>
+                    <h4 class="text-lg font-bold text-brand-dark">Priya Sharma</h4>
+                    <p class="mb-3 text-sm font-semibold text-brand-teal">Head of Design</p>
+                    <p class="text-xs text-gray-500">Creative soul passionate about intuitive user experiences.</p>
+                </div>
+
+                <div class="p-6 text-center transition-all duration-300 bg-white shadow-sm rounded-2xl group hover:shadow-lg"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 overflow-hidden transition-colors border-4 rounded-full border-brand-light group-hover:border-brand-teal">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Team Member"
+                            class="object-cover w-full h-full">
+                    </div>
+                    <h4 class="text-lg font-bold text-brand-dark">Rohan Gupta</h4>
+                    <p class="mb-3 text-sm font-semibold text-brand-teal">Lead Developer</p>
+                    <p class="text-xs text-gray-500">Full-stack wizard specialized in React and Node.js.</p>
+                </div>
+
+                <div class="p-6 text-center transition-all duration-500 bg-white shadow-sm rounded-2xl group hover:shadow-lg"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="w-32 h-32 mx-auto mb-4 overflow-hidden transition-colors duration-500 border-4 rounded-full border-brand-light group-hover:border-brand-teal">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Team Member"
+                            class="object-cover w-full h-full">
+                    </div>
+                    <h4 class="text-lg font-bold text-brand-dark">Sneha Verma</h4>
+                    <p class="mb-3 text-sm font-semibold text-brand-teal">Mobile Architect</p>
+                    <p class="text-xs text-gray-500">Expert in building seamless Flutter and Native apps.</p>
                 </div>
             </div>
         </div>
@@ -314,9 +353,8 @@
                     <ul class="space-y-2 text-sm">
                         <li><a href="index.html"
                                 class="text-gray-400 transition duration-200 nav-link hover:text-white">Home</a></li>
-                        <li><a href="about.html"
-                                class="text-gray-400 transition duration-200 nav-link hover:text-white">About Us</a>
-                        </li>
+                        <li><a href="#" class="text-gray-400 transition duration-200 nav-link hover:text-white">About
+                                Us</a></li>
                         <li><a href="process.html"
                                 class="text-gray-400 transition duration-200 nav-link hover:text-white">Process</a></li>
                     </ul>
@@ -324,8 +362,9 @@
                 <div class="col-span-1">
                     <h5 class="mb-3 text-lg font-semibold text-brand-teal">Solutions</h5>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="text-gray-400 transition duration-200 nav-link hover:text-white">Our
-                                Services</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 transition duration-200 nav-link hover:text-white">Our Services</a>
+                        </li>
                         <li><a href="portfolio.html"
                                 class="text-gray-400 transition duration-200 nav-link hover:text-white">Portfolio</a>
                         </li>
@@ -337,8 +376,8 @@
                 <div class="col-span-2 md:col-span-1">
                     <h5 class="mb-3 text-lg font-semibold text-brand-teal">Contact</h5>
                     <a href="#contact"
-                        class="inline-block w-full px-6 py-2 text-sm font-semibold text-center text-white transition duration-300 rounded-full nav-link bg-brand-navy hover:bg-brand-teal hover:text-brand-navy"
-                        data-page="contact">Get a Quote</a>
+                        class="inline-block w-full px-6 py-2 text-sm font-semibold text-center text-white transition duration-700 rounded-full nav-link bg-brand-navy hover:bg-brand-teal hover:text-brand-navy">Get
+                        a Quote</a>
                     <div class="flex justify-center mt-4 space-x-4 md:space-x-8 md:justify-start">
                         <a href="#" class="text-gray-400 transition duration-300 hover:text-brand-teal"><i
                                 class="text-xl fab fa-linkedin-in"></i></a>
@@ -368,7 +407,6 @@
         // Mobile Menu Logic
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
-        const links = document.querySelectorAll('.mobile-link');
         let isMenuOpen = false;
 
         function toggleMenu() {
@@ -383,24 +421,15 @@
                 btn.innerHTML = '<i class="fa-solid fa-bars"></i>';
             }
         }
-
         btn.addEventListener('click', toggleMenu);
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                if (isMenuOpen) toggleMenu();
-            });
-        });
 
-        // Navbar Color State Logic (White on top, Navy on scroll)
+        // Navbar Color State Logic
         const navbar = document.getElementById('navbar');
-
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                // Scrolled State: Glass effect, Navy text
                 navbar.classList.add('glass-nav', 'py-4', 'text-brand-navy');
                 navbar.classList.remove('py-6', 'text-white');
             } else {
-                // Top State: Transparent, White text
                 navbar.classList.remove('glass-nav', 'py-4', 'text-brand-navy');
                 navbar.classList.add('py-6', 'text-white');
             }
